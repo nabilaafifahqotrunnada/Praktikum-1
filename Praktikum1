@@ -1,0 +1,56 @@
+package praktikum1;
+
+/**
+ *
+ * @author nabila
+ */
+public class Praktikum1 {
+public int penumpang;
+public int maxpenumpang;
+public double berat;
+public double ratarata;
+
+public Praktikum1(int maxpenumpang) {
+    this.maxpenumpang = maxpenumpang;
+    penumpang = 0;
+}
+public void addpenumpang(int penumpang) {
+    int temp;
+    temp = this.penumpang + penumpang;
+    if (temp> maxpenumpang)
+    {
+        System.out.println("Kelebihan muatan");
+    }
+    else
+    {
+        this.penumpang = temp;
+    }
+}
+public void getpenumpang(int password) {
+    if (password == 24)
+    {
+        System.out.println("Password benar");
+    }
+    else
+    {
+        System.out.println("Password salah");
+        System.exit(0);
+    }
+}
+    public void addtotalberat(double berat) {
+double y = this.berat;
+this.berat = y;
+
+
+    }
+    public void getAverage() {
+    ratarata = this.berat/this.penumpang;
+    }
+    
+public void cetakpenumpang()
+{
+    System.out.println("Penumpang bus sekarang ada " + penumpang);
+    System.out.println("Maksimum penumpang adalah " + maxpenumpang);
+    System.out.println("Rata - rata berat penumpang saat ini adalah " + ratarata);
+}
+}
