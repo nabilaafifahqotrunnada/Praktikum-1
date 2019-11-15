@@ -1,0 +1,39 @@
+package praktikum1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author nabila
+ */
+public class Ujipraktikum1 {
+public static void main(String[] abc) {
+        Praktikum1 Bus = new Praktikum1(22);
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukkan password : ");
+        int x = input.nextInt();
+        Bus.getpenumpang(x);
+        Bus.cetakpenumpang();
+
+        Bus.addpenumpang(2);
+        Bus.addtotalberat(10);
+        Bus.getAverage();
+        Bus.cetakpenumpang();
+
+        Bus.addpenumpang(1);
+        Bus.addtotalberat(7);
+        Bus.getAverage();
+        Bus.cetakpenumpang();
+
+        Bus.addpenumpang(2);
+        Bus.addtotalberat(5);
+        Bus.getAverage();
+        Bus.cetakpenumpang();
+
+        Bus.addpenumpang(1);
+        Bus.addtotalberat(4);
+        Bus.getAverage();
+        Bus.cetakpenumpang();
+    }
+}
